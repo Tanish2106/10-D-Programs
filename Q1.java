@@ -6,19 +6,13 @@ public class Q1
         {
             if((i!=1)&&(i!=3)&&(i!=6))
             {
-                System.out.print(i+" ");
+                System.out.print(i +" ");
             }
             else
             {
-                System.out.println(i+" ");
+                System.out.println(i +" ");
             }
         }
     }
 }
-                
             
-                
-                
-       
-        
-    
