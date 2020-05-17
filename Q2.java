@@ -1,4 +1,4 @@
- public class q2
+ public class Q2
  {
      String employee_name; float employee_salary, HRA, total_salary;
      String nameemp(String name)
