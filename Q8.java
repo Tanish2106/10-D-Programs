@@ -1,4 +1,4 @@
-public class q8
+public class Q8
 {
     void check(String str, char ch)
     {

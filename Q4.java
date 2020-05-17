@@ -1,4 +1,4 @@
-public class q4
+public class Q4
 {
     public static void main(char ch, double p, double r, int n)
     {

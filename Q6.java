@@ -1,4 +1,4 @@
-public class q6
+public class Q6
 {
     public static void main(String s)
     {

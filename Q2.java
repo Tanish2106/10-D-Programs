@@ -1,4 +1,4 @@
- public class q2
+ public class Q2
  {
      String employee_name; float employee_salary, HRA, total_salary;
      String nameemp(String name)
@@ -15,7 +15,7 @@
      }
      public static void main()
      {
-         q2 obj=new q2();
+         Q2 obj=new Q2();
          String x=obj.nameemp("Tanish");
          float y =obj.salaryemp(100000);
          System.out.println("The name of the employee is "+x);

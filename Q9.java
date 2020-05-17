@@ -1,4 +1,4 @@
-public class q9
+public class Q9
 {
     void series1()
     {
