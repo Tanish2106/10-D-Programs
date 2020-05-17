@@ -1,4 +1,4 @@
-public class q5
+public class Q5
 {
     void info()
     {
