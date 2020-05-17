@@ -1,4 +1,4 @@
-public class q10__ii
+public class Q10__ii
 {
     public static void main(String args[])
     {
