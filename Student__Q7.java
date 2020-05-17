@@ -1,4 +1,4 @@
-public class Student__q7
+public class Student__Q7
 {
     String name;
     int Roll_no;
