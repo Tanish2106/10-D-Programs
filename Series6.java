@@ -1,6 +1,6 @@
-//S= 2!-4!+6!-8!+....n
+//S=1+2/1*2 + 1+2+3/1*2*3 +...+ 1+2+3...+n/1*2*3*...*n
 import java.util.Scanner;
-class Series5
+class Series6
 {
     int n;
     void getData()
@@ -9,13 +9,20 @@ class Series5
         System.out.println("Enter the value n");
         n=sc.nextInt();
     }
+    int seqSum(int m)
+    {
+        int s=0;
+        for (int i=1;i<=m;i++)
+        s=s+i;
+        
+        return s;
+    }
     int fact(int m)
     {
-        int prod = 1;
-        for (int i=1;i<=m;i++)
-        {
-            prod = prod*i;
-        }
+        int prod=1;
+        for(int i=1;i<=m;i++)
+        prod=prod*i;
+        
         return prod;
     }
     void computeSum()
@@ -23,25 +30,14 @@ class Series5
         int sum=0;
         for(int i=1;i<=n;i++)
         {
-          if(i%2==0)  
-          {
-              sum=sum-fact(2*i);
-          }
-          else
-          {
-               sum= sum + fact(2*i) ;
-          }
+         sum=sum+(int)seqSum(i+1)/fact(i+1);
         }
-        System.out.println("The sum is: "+sum);
+        System.out.println();
     }
     public static void main()
     {
-        Series5 obj = new Series5();
+        Series6 obj = new Series6();
         obj.getData();
         obj.computeSum();
     }
 }
-        
-        
-
-
