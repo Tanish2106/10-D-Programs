@@ -3,7 +3,7 @@ import java.util.Scanner;
 class Series2    //2+5+10+17+26+....n;
 {
     int n;
-    void getData()
+    public void getData()
     {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number");

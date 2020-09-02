@@ -7,7 +7,7 @@ class ProductOfDigitsHW
         Scanner sc = new Scanner(System.in);
         num= sc.nextInt();
     }
-    void digitCount()
+    void Product()
     {
         int n= num;//preserved copy
         int digit=0;
@@ -20,5 +20,4 @@ class ProductOfDigitsHW
         }
         System.out.println("Product = " + prod);
     }
-    
 }

@@ -15,7 +15,7 @@ class SeriesHW    //1 + x^0 + x^1 + x^n;
     void compute()
     {
         int sum = 0;
-        for(int i=0;i<+n;i++)
+        for(int i=0;i<=n;i++)
         {
             sum+=Math.pow(x,i);
         }

@@ -13,16 +13,18 @@ class Series6
     {
         int s=0;
         for (int i=1;i<=m;i++)
-        s=s+i;
-        
+        {
+            s=s+i;
+        }
         return s;
     }
     int fact(int m)
     {
         int prod=1;
         for(int i=1;i<=m;i++)
-        prod=prod*i;
-        
+        {
+            prod=prod*i;
+        }
         return prod;
     }
     void computeSum()

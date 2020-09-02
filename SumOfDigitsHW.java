@@ -7,7 +7,7 @@ class SumOfDigitsHW
         Scanner sc = new Scanner(System.in);
         num= sc.nextInt();
     }
-    void digitCount()
+    void Sum()
     {
         int n= num;
         int digit=0;
