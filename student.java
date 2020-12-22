@@ -1,42 +1,45 @@
-public class student
+public class Student
 {
-    String name; int age,m1,m2,m3,maximum; double average;
-    student(String Name,int Age, int Marks1, int Marks2, int Marks3)
+    String name;
+    int Roll_no;
+    double sub1;
+    double sub2;
+    double sub3;
+    double sub4;
+    double sub5;
+    double avg;
+    void allotment(double maths, double phy, double chem, double bio, double comp)
     {
+        sub1=maths;
+        sub2=phy;
+        sub3=chem;
+        sub4=bio;
+        sub5=comp;
+        avg=(sub1+sub2+sub3+sub4+sub5)/5;
+        if(avg>=90)
+        {
+            System.out.println("Science with computers");
+        }
+        else if((avg>=80)&&(avg<90))
+        {
+            System.out.println("Science without computers");
+        }
+        else if((avg>=70)&&(avg<80))
+        {
+            System.out.println("Commerce with maths");
+        }
+        else if((avg>=60)&&(avg<70))
+        {
+            System.out.println("Commerce without maths");
+        }
+        else
+        {
+            System.out.println("No Stream");
+        }
     }
-    student()
+    public static void main()
     {
-    }
-    void accept( String Name, int Age, int Marks1, int Marks2, int Marks3)
-    {
-        name=Name;
-        age=Age;
-        m1=Marks1;
-        m2=Marks2;
-        m3=Marks3;
-    }
-    void calc()
-    {
-        average=(m1+m2+m3)/3.0;
-        maximum=(m1>m2 && m1>m3)?m1:(m2>m1 && m2>m3)?m2:m3;
-    }
-    void display()
-    {
-        System.out.println("Name="+name);
-        System.out.println("Age="+age);
-        System.out.println("Marks1="+m1);
-        System.out.println("Marks2="+m2);
-        System.out.println("Marks3="+m3);
-        System.out.println("Average="+average);
-        System.out.println("Maximum marks="+maximum);
-    }
-    public static void main(String args[])
-    {
-        student obj1= new student("Jake", 15, 75,90,99);
-        student obj2= new student();
-        obj2.accept("Jake", 15, 75,90,99);
-        obj2.calc();
-        obj2.display();
+        Student obj = new Student();
+        obj.allotment(80,56,76,78,89);
     }
 }
-        

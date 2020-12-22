@@ -1,11 +1,12 @@
-public class Q5
+class Q5
 {
     void info()
     {
+        System.out.println("What would you liek to do?");
         System.out.println("Enter 1 to print the triangle of numbers");
-        System.out.println("Enter 2 to print the triangle of alphabets");
+        System.out.println("Enter 2 to print the triangle of 5");
     }
-    public static void main(int n)
+    void pattern(int n)
     {
         switch(n)
         {
@@ -31,5 +32,11 @@ public class Q5
             default:
             System.out.println("Invalid");
         }
+    }
+    public static void main()
+    {
+        Q5 obj = new Q5();
+        obj.info();
+        obj.pattern(1);
     }
 }

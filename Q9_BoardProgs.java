@@ -1,4 +1,4 @@
-public class Q9
+public class Q9_BoardProgs
 {
     void series1()
     {
@@ -28,5 +28,10 @@ public class Q9
         }
         System.out.println("The sum is "+ sum);
     }
+    public static void main()
+    {
+        Q9_BoardProgs obj = new Q9_BoardProgs();
+        obj.series1();
+        obj.series2(5.0);
+    }    
 }
-    

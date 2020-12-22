@@ -7,7 +7,7 @@ public class Q10__ii
             int number=5;
             for(int j=0; j<i; j++)
             {
-                System.out.println((number-j)+"");
+                System.out.print((number-j)+"");
             }
             System.out.println();
         }
